@@ -6,6 +6,7 @@ class Minecraft(ShowBase):
         ShowBase.__init__(self)
         self.land = Mapmanager()
         base.camLens.setFov(90)
-        
+        base.camera.setPos(0, -20, 3)
+
 game = Minecraft()
 game.run()
